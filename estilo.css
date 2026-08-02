@@ -27,3 +27,8 @@ button {
 button:hover {
     background-color: #555;
 }
+.imagen-osito {
+    width: 250px; /* Ajustá este valor para cambiar el tamaño */
+    max-width: 100%; /* Para que no se rompa en pantallas pequeñas */
+    height: auto; /* Mantiene la proporción original sin deformar */
+}
