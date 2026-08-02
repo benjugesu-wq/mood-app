@@ -1,0 +1,80 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+#contenedor {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    width: 320px;
+}
+
+#personaje {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#botones {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 12px 0;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#boton-feliz { 
+    background-color: #ff9a9e; 
+    color: white;
+}
+#boton-feliz:hover { 
+    background-color: #ff758c; 
+}
+
+#boton-enojado { 
+    background-color: #ff6b6b; 
+    color: white;
+}
+#boton-enojado:hover { 
+    background-color: #ff5252; 
+}
+
+#boton-triste { 
+    background-color: #4facfe; 
+    color: white;
+}
+#boton-triste:hover { 
+    background-color: #00f2fe; 
+}
+#boton-neutral {
+    background-color: #9b5de5;
+    color: white;
+}
+#boton-neutral:hover {
+    background-color: #7b2cbf;
+}
