@@ -1,80 +1,29 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
     margin: 0;
-    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    padding: 20px;
 }
 
-#contenedor {
-    text-align: center;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 30px;
-    border-radius: 25px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(10px);
-    width: 320px;
-}
-
-#personaje {
-    width: 200px;
-    height: auto;
-    border-radius: 15px;
-    margin-bottom: 25px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-#botones {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+.tarjeta {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 button {
-    flex: 1;
-    padding: 12px 0;
+    background-color: #333;
+    color: #fff;
     border: none;
-    border-radius: 12px;
+    padding: 10px 20px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 15px;
-    font-weight: 600;
-    transition: all 0.2s ease;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
 }
 
-button:active {
-    transform: scale(0.98);
-}
-
-#boton-feliz { 
-    background-color: #ff9a9e; 
-    color: white;
-}
-#boton-feliz:hover { 
-    background-color: #ff758c; 
-}
-
-#boton-enojado { 
-    background-color: #ff6b6b; 
-    color: white;
-}
-#boton-enojado:hover { 
-    background-color: #ff5252; 
-}
-
-#boton-triste { 
-    background-color: #4facfe; 
-    color: white;
-}
-#boton-triste:hover { 
-    background-color: #00f2fe; 
-}
-#boton-neutral {
-    background-color: #9b5de5;
-    color: white;
-}
-#boton-neutral:hover {
-    background-color: #7b2cbf;
+button:hover {
+    background-color: #555;
 }
