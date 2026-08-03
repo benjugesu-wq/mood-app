@@ -9,19 +9,25 @@
 </head>
 <body>
     <div class="top-bar">
-          <!-- Avatar con nivel superpuesto en la esquina -->
-          <div class="profile-container">
-            <img src="foto.jpg" alt="Perfil" class="avatar">
-            <span class="level-badge">5</span>
-          </div>
+      <!-- Perfil compacto que ya teníamos -->
+      <div class="profile-container">
+        <img src="foto.jpg" alt="Perfil" class="avatar">
+        <span class="level-badge">5</span>
+      </div>
+    
+      <!-- Botón Selector de Misiones -->
+      <div class="missions-dropdown">
+        <button class="dropdown-btn" onclick="toggleMenu()">
+          🎯 Misiones <span class="arrow">▼</span>
+        </button>
         
-          <!-- Nivel y progreso horizontal compacto -->
-          <div class="xp-info">
-            <span class="xp-text">Nivel 5</span>
-            <div class="xp-bar-bg">
-              <div class="xp-bar-fill" style="width: 60%;"></div>
-            </div>
-          </div>
+        <!-- Submenú desplegable -->
+        <div class="dropdown-content" id="missionsMenu">
+          <a href="#" class="mission-item amor">❤️ Amor</a>
+          <a href="#" class="mission-item tareas">📝 Tareas</a>
+          <a href="#" class="mission-item gym">🏋️‍♂️ Gym</a>
+        </div>
+      </div>
     </div>
     <div id="contenedor">
         <img id="personaje" src="Gemini_Generated_Image_vrp129vrp129vrp1.jpg" alt="Oso con globo" class="imagen-osito">
