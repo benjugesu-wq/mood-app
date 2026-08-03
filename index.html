@@ -8,27 +8,64 @@
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <div class="top-bar">
-      <!-- Perfil compacto que ya teníamos -->
-      <div class="profile-container">
-        <img src="foto.jpg" alt="Perfil" class="avatar">
-        <span class="level-badge">5</span>
-      </div>
-    
-      <!-- Botón Selector de Misiones -->
-      <div class="missions-dropdown">
-        <button class="dropdown-btn" onclick="toggleMenu()">
-          🎯 Misiones <span class="arrow">▼</span>
-        </button>
-        
-        <!-- Submenú desplegable -->
-        <div class="dropdown-content" id="missionsMenu">
-          <a href="#" class="mission-item amor">❤️ Amor</a>
-          <a href="#" class="mission-item tareas">📝 Tareas</a>
-          <a href="#" class="mission-item gym">🏋️‍♂️ Gym</a>
-        </div>
+   <!-- Barra Superior Unificada -->
+  <div class="top-bar">
+    <div class="profile-container">
+      <img src="foto.jpg" alt="Perfil" class="avatar">
+      <span class="level-badge">5</span>
+    </div>
+
+    <div class="missions-dropdown">
+      <button class="dropdown-btn" onclick="toggleMenu()">🎯 Misiones ▼</button>
+      <div class="dropdown-content" id="missionsMenu">
+        <a href="#" class="mission-item amor" onclick="cambiarSeccion('amor')">❤️ Amor</a>
+        <a href="#" class="mission-item tareas" onclick="cambiarSeccion('tareas')">📝 Tareas</a>
+        <a href="#" class="mission-item gym" onclick="cambiarSeccion('gym')">🏋️‍♂️ Gym</a>
       </div>
     </div>
+  </div>
+
+  <!-- Contenedor de Secciones -->
+  <main class="content-container">
+
+    <!-- SECCIÓN AMOR -->
+    <section id="sec-amor" class="section-content">
+      <h2 class="title amor-title">❤️ Misiones de Amor</h2>
+      <div class="mission-card">
+        <div class="mission-info">
+          <h3>Organizar una cita sorpresa</h3>
+          <p>Planear una salida o cena especial.</p>
+        </div>
+        <span class="xp-reward">+150 XP</span>
+        <button class="btn-complete">Completar</button>
+      </div>
+    </section>
+
+    <!-- SECCIÓN TAREAS (Visible al inicio) -->
+    <section id="sec-tareas" class="section-content active">
+      <h2 class="title tareas-title">📝 Tareas & Productividad</h2>
+      <div class="mission-card">
+        <div class="mission-info">
+          <h3>Avanzar en el proyecto</h3>
+          <p>Codear o estudiar durante al menos 1 hora.</p>
+        </div>
+        <span class="xp-reward">+100 XP</span>
+        <button class="btn-complete">Completar</button>
+      </div>
+    </section>
+
+    <!-- SECCIÓN GYM -->
+    <section id="sec-gym" class="section-content">
+      <h2 class="title gym-title">🏋️‍♂️ Entrenamiento & Salud</h2>
+      <div class="mission-card">
+        <div class="mission-info">
+          <h3>Rutina de entrenamiento</h3>
+          <p>Completar la sesión de gym del día.</p>
+        </div>
+        <span class="xp-reward">+200 XP</span>
+        <button class="btn-complete">Completar</button>
+      </div>
+    </section>
     <div id="contenedor">
         <img id="personaje" src="Gemini_Generated_Image_vrp129vrp129vrp1.jpg" alt="Oso con globo" class="imagen-osito">
         
