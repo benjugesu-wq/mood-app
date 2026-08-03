@@ -71,6 +71,69 @@ body {
   background: linear-gradient(90deg, #4e54c8, #8f94fb);
   border-radius: 3px;
 }
+/* Posicionamiento para el menú desplegable */
+.missions-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Botón principal dentro de la barra */
+.dropdown-btn {
+  background-color: #2b2b3d;
+  color: #fff;
+  border: 1px solid #3f3f5a;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.arrow {
+  font-size: 10px;
+  color: #888;
+}
+
+/* Menú que flota al hacer clic */
+.dropdown-content {
+  display: none; /* Oculto por defecto */
+  position: absolute;
+  right: 0;
+  top: 38px;
+  background-color: #252538;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.4);
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 100;
+  border: 1px solid #3f3f5a;
+}
+
+/* Opciones dentro del menú */
+.mission-item {
+  color: white;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+
+.mission-item:hover {
+  background-color: #33334d;
+}
+
+/* Colores temáticos al pasar el mouse (opcional) */
+.mission-item.amor:hover { color: #ff6b81; }
+.mission-item.tareas:hover { color: #70a1ff; }
+.mission-item.gym:hover { color: #2ed573; }
+
+/* Clase para mostrar el menú desde JavaScript */
+.show {
+  display: block;
+}
 .tarjeta {
     background-color: #1e1e1e;
     border-radius: 8px;
