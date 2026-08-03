@@ -1,3 +1,21 @@
+function toggleMenu() {
+  document.getElementById("missionsMenu").classList.toggle("show");
+}
+
+// Cierra el menú si tocás en cualquier otro lado de la pantalla
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown-btn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
 const personaje = document.getElementById('personaje');
 
 document.getElementById('boton-feliz').addEventListener('click', () => {
