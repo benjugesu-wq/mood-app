@@ -9,6 +9,7 @@ body {
 .top-bar {
   display: flex;
   align-items: center;
+    justify-content: space-between;
   gap: 12px;
   height: 52px; /* Alto fijo y compacto */
   padding: 0 12px;
