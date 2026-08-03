@@ -40,3 +40,19 @@ if ('serviceWorker' in navigator) {
             .catch(err => console.log('Error al registrar el Service Worker:', err));
     });
 }
+// Función para cambiar de sección dinámicamente
+    function cambiarSeccion(seccionId) {
+      // Ocultar todas las secciones
+      const secciones = document.querySelectorAll('.section-content');
+      secciones.forEach(sec => sec.classList.remove('active'));
+
+      // Mostrar la sección elegida
+      document.getElementById('sec-' + seccionId).classList.add('active');
+
+      // Cierra el menú desplegable al hacer clic
+      toggleMenu();
+    }
+
+    function toggleMenu() {
+      document.getElementById("missionsMenu").classList.toggle("show");
+    }
