@@ -5,22 +5,72 @@ body {
     margin: 0;
     padding: 20px;
 }
+/* Barra principal bien finita */
 .top-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 16px;
-  background-color: #2c3e50;
-  color: white;
+  gap: 12px;
+  height: 52px; /* Alto fijo y compacto */
+  padding: 0 12px;
+  background-color: #1e1e2f;
+  color: #fff;
+}
+
+/* Avatar más pequeño */
+.profile-container {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .avatar {
-  width: 45px;
-  height: 45px;
+  width: 34px;  /* Reducido de 45px a 34px */
+  height: 34px;
   border-radius: 50%;
-  object-fit: cover;
+  border: 2px solid #4e54c8;
 }
 
+/* Insignia de nivel flotante o superpuesta sutilmente */
+.level-badge {
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  background: #ff4757;
+  color: white;
+  font-size: 9px;
+  font-weight: bold;
+  padding: 1px 4px;
+  border-radius: 8px;
+  border: 1px solid #1e1e2f;
+}
+
+/* Sección de experiencia compacta */
+.xp-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-grow: 1; /* Ocupa el espacio disponible */
+}
+
+.xp-text {
+  font-size: 11px;
+  color: #a0a0b0;
+}
+
+.xp-bar-bg {
+  width: 100%;
+  max-width: 120px; /* Para que no se estire demasiado */
+  height: 6px;       /* Barrita bien delgada */
+  background-color: #333446;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.xp-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4e54c8, #8f94fb);
+  border-radius: 3px;
+}
 .tarjeta {
     background-color: #1e1e1e;
     border-radius: 8px;
